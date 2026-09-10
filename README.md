@@ -1,18 +1,18 @@
 <p align="center">
-  <img src="docs/banner.svg" alt="SQL Snippets banner" width="100%" />
+  <img src="docs/banner.svg" alt="sql-snippets banner" width="100%" />
 </p>
 
 <h1 align="center">sql-snippets</h1>
 
 <p align="center">
-  <strong>EN</strong> Useful PostgreSQL SQL snippets for everyday tasks<br/>
-  <strong>PT</strong> Snippets SQL PostgreSQL úteis para o dia a dia
+  <strong>EN</strong> Useful PostgreSQL snippets for everyday tasks.<br/>
+  <strong>PT</strong> Snippets úteis de PostgreSQL para tarefas do dia a dia.
 </p>
 
 <p align="center">
   <a href="https://github.com/manansbdb/sql-snippets/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-22c55e?style=for-the-badge" alt="MIT" /></a>
   <img src="https://img.shields.io/badge/lang-EN%20%7C%20PT-3b82f6?style=for-the-badge" alt="EN PT" />
-  <img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge" alt="SQL" />
+  <img src="https://img.shields.io/badge/type-docs-6366f1?style=for-the-badge" alt="docs" />
   <a href="#support--apoio"><img src="https://img.shields.io/badge/donate-BTC-f59e0b?style=for-the-badge" alt="Donate BTC" /></a>
 </p>
 
@@ -22,78 +22,49 @@
 
 | English | Português |
 |---------|-----------|
-| Handy **PostgreSQL snippets** for basics, indexes/EXPLAIN, and maintenance. | **Snippets PostgreSQL** para basics, indexes/EXPLAIN e manutenção. |
-| Copy SQL into your migrations, runbooks, or `psql` sessions. | Copia o SQL para migrations, runbooks ou sessões `psql`. |
+| Useful PostgreSQL snippets for everyday tasks. | Snippets úteis de PostgreSQL para tarefas do dia a dia. |
 
 ```mermaid
 flowchart LR
-  A["📂 snippets/"] --> B["basics / indexes / maintenance"]
-  B --> C["🐘 psql / migration"]
-  C --> D["✅ Query done"]
-  style A fill:#336791,stroke:#1e3a5f,color:#fff
-  style B fill:#0ea5e9,stroke:#0369a1,color:#fff
-  style C fill:#f59e0b,stroke:#b45309,color:#fff
-  style D fill:#22c55e,stroke:#15803d,color:#fff
+  A["📖 Read"] --> B["🛠️ Apply"]
+  B --> C["📤 Ship"]
+  style A fill:#6366f1,stroke:#4338ca,color:#fff
+  style B fill:#14b8a6,stroke:#0f766e,color:#fff
+  style C fill:#22c55e,stroke:#15803d,color:#fff
 ```
 
 ---
 
 ## Install / Instalação
 
-### 1) Clone / Clona
+### 1) Clone
 
 ```bash
 git clone https://github.com/manansbdb/sql-snippets.git
 cd sql-snippets
 ```
 
-### 2) Use with psql / Usa com psql
+### Use / Usar
 
 ```bash
-psql "$DATABASE_URL" -f snippets/basics.sql
-# or copy fragments into your migration tool
-mkdir -p /path/to/docs/sql
-cp snippets/*.sql /path/to/docs/sql/
+# open the files in this repo and copy what you need into your project
+ls
 ```
 
 ### Requirements / Requisitos
 
 - `git`
-- Optional: PostgreSQL client (`psql`)
+- No paid services required / Sem serviços pagos
 
 ---
 
-## Quick start / Início rápido
+## What's included / O que inclui
 
-```bash
-git clone https://github.com/manansbdb/sql-snippets.git
-# open snippets/basics.sql / indexes-explain.sql / maintenance.sql
-```
-
----
-
-## Contents / Conteúdos
-
-| Path | Purpose / Função |
-|------|------------------|
-| `snippets/basics.sql` | Everyday queries |
-| `snippets/indexes-explain.sql` | Indexes + EXPLAIN |
-| `snippets/maintenance.sql` | Vacuum / maintenance |
-| `SUPPORT.md` | Donations / Doações |
-
----
-
-## Project layout / Estrutura
-
-```text
-sql-snippets/
-├── docs/banner.svg
-├── snippets/basics.sql
-├── snippets/indexes-explain.sql
-├── snippets/maintenance.sql
-├── SUPPORT.md
-└── README.md
-```
+| File | EN | PT |
+|------|----|----|
+| `snippets/basics.sql` | CRUD & filters | CRUD e filtros |
+| `snippets/indexes-explain.sql` | Indexes & EXPLAIN | Índices e EXPLAIN |
+| `snippets/maintenance.sql` | Vacuum, stats | Vacuum, estatísticas |
 
 ---
 
@@ -105,7 +76,7 @@ Bitcoin donations welcome / Doações em Bitcoin bem-vindas:
 bc1q0qfnlnxyum9u45stzxe0a7jnhtj4j0usfkqdjw
 ```
 
-See [SUPPORT.md](./SUPPORT.md).
+**Network / Rede:** BTC (Bech32).
 
 ---
 
